@@ -4,7 +4,6 @@ import Home from './components/Home';
 import Search from './components/Search';
 import AllCareers from './components/AllCareers';
 import FilteredCareers from './components/FilteredCareers';
-import CareerDetail from './components/CareerDetail';
 import Contacts from './components/Contacts';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -39,7 +38,7 @@ function App() {
                 />
               } 
             />
-            <Route path="/careers/:id" element={<CareerDetail />} />
+           
             <Route path="/contact" element={<Contacts />} />
             <Route path="*" element={<h1>404 Not Found</h1>} />
           </Routes>
