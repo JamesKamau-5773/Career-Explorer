@@ -125,7 +125,7 @@ function Search({ setSearchResults, setSearchFilters }) {
                   <option value="Trades">Trades</option>
                   <option value="Hospitality">Hospitality</option>
                 </>
-              )
+              )}
             </select>
           </div>
 
