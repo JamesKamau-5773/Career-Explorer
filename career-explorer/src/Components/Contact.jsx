@@ -10,6 +10,12 @@ function Contacts() {
         <p>Address: Nairobi, Kenya</p>
       </div>
       <div>
+        <h3>Social Media</h3>
+        <p>Facebook: careerguide</p>
+        <p>Instagram: @careerguide</p>
+        <p>Twitter: @careerguide</p>
+        <p>LinkedIn: CareerGuide</p>
+      </div>
     </div>
   );
 }
