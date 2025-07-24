@@ -156,4 +156,47 @@ function AllCareers() {
                       className="save-button"
                       onClick={() => saveEdit(career.id)}
                     >
-                    
+                      Save
+                    </button>
+                    <button 
+                      className="cancel-button"
+                      onClick={() => setEditingId(null)}
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <CareerCard career={career} />
+                  <div className="action-buttons">
+                    <button 
+                      className="edit-button"
+                      onClick={() => startEdit(career)}
+                    >
+                      Edit
+                    </button>
+                    <button 
+                      className="delete-button"
+                      onClick={() => deleteCareer(career.id)}
+                    >
+                      Delete
+                    </button>
+                    <button 
+                      className="favorite-button"
+                      onClick={() => addFavorite(career.id)}
+                    >
+                      Favorite
+                    </button>
+                  </div>
+                </>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default AllCareers;
