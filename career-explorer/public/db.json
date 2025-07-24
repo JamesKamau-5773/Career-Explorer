@@ -74,7 +74,7 @@
     "requiredGrades":["A", "B"],
     "category": "Technology",
     "experience": "Entry-level"
-    }
+    },
     
     
     {
@@ -109,7 +109,7 @@
     "description":"Plans menus, prepares food, and manages kitchen operations in restaurants, hotels, and other food service establishments.",
     "salaryRange":"$35,000 - $55,000",
     "requiredSkills":["Culinary Skills", "Creativity", "Time Management", "Leadership"],
-    "educationLevel":"Certificate", "Diploma"],
+    "educationLevel":["Certificate", "Diploma"],
     "requiredGrades":["C", "D"],
     "category": "Hospitality",
     "experience": "Entry-level"
