@@ -34,4 +34,3 @@ const api = {
 
 export default api;
 
-API
