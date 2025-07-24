@@ -119,4 +119,41 @@ function AllCareers() {
                       onChange={handleEditChange}
                     />
                   </div>
-               
+                  
+                  <div className="form-group">
+                    <label>Category:</label>
+                    <select
+                      name="category"
+                      value={editData.category}
+                      onChange={handleEditChange}
+                    >
+                      <option value="Tech">Technology</option>
+                      <option value="Health">Healthcare</option>
+                      <option value="Business">Business</option>
+                    </select>
+                  </div>
+
+                  <div className="form-group">
+                    <label>Salary:</label>
+                    <input
+                      name="salary"
+                      value={editData.salary}
+                      onChange={handleEditChange}
+                    />
+                  </div>
+
+                  <div className="form-group">
+                    <label>Description:</label>
+                    <textarea
+                      name="description"
+                      value={editData.description}
+                      onChange={handleEditChange}
+                    />
+                  </div>
+
+                  <div className="form-buttons">
+                    <button 
+                      className="save-button"
+                      onClick={() => saveEdit(career.id)}
+                    >
+                    
