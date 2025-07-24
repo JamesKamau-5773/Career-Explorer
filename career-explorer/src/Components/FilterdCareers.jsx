@@ -46,4 +46,16 @@ function FilteredCareers({ searchResults, searchFilters }) {
             ))}
           </div>
         </div>
-      ) :
+      ) : (
+        <div className="no-results">
+          <p>No careers match your current filters.</p>
+          <Link to="/search" className="try-again-link">
+            Try different search options
+          </Link>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default FilteredCareers;
