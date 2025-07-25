@@ -177,7 +177,7 @@ Career-Explorer/
 
 If you have any questions, suggestions, or need assistance, please contact:
 
-- Email: <james.kamau@student.moringaschool.com>
+
 - GitHub: [@JamesKamau-5773](https://github.com/JamesKamau-5773)
 
 ## License
