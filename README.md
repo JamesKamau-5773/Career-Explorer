@@ -10,7 +10,7 @@ This is a full-stack career exploration application built using React JS for the
 
 ## Screenshot
 
-![Career Explorer App Screenshot](./public/career-explorer-screenshot.png)
+![Career Explorer App Screenshot](./public/career-explorer-screenshot.png.png)
 
 ## Features
 
