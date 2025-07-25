@@ -47,6 +47,119 @@ app.get('/api/careers/:id', (req, res) => {
   }
 });
 
+app.post('/api/careers', (req, res) => {
+  console.log('POST /api/careers requested', req.body);
+  try {
+    const newCareer = {
+      id: Date.now(), // Simple ID generation
+      ...req.body,
+      createdAt: new Date().toISOString()
+    };
+
+    if (!dbData.careers) {
+      dbData.careers = [];
+    }
+
+    dbData.careers.push(newCareer);
+
+    // Save to file (optional - for persistence)
+    try {
+      const dbPath = path.join(__dirname, 'src/db.json');
+      fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2));
+    } catch (writeError) {
+      console.warn('Could not save to file:', writeError.message);
+    }
+
+    res.status(201).json(newCareer);
+  } catch (error) {
+    console.error('Error adding career:', error);
+    res.status(500).json({ error: 'Failed to add career' });
+  }
+});
+
+app.put('/api/careers/:id', (req, res) => {
+  console.log(`PUT /api/careers/${req.params.id} requested`, req.body);
+  try {
+    const careerIndex = dbData.careers?.findIndex(c => c.id === parseInt(req.params.id));
+
+    if (careerIndex === -1 || careerIndex === undefined) {
+      return res.status(404).json({ error: 'Career not found' });
+    }
+
+    dbData.careers[careerIndex] = {
+      ...dbData.careers[careerIndex],
+      ...req.body,
+      updatedAt: new Date().toISOString()
+    };
+
+    // Save to file (optional - for persistence)
+    try {
+      const dbPath = path.join(__dirname, 'src/db.json');
+      fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2));
+    } catch (writeError) {
+      console.warn('Could not save to file:', writeError.message);
+    }
+
+    res.json(dbData.careers[careerIndex]);
+  } catch (error) {
+    console.error('Error updating career:', error);
+    res.status(500).json({ error: 'Failed to update career' });
+  }
+});
+
+app.delete('/api/careers/:id', (req, res) => {
+  console.log(`DELETE /api/careers/${req.params.id} requested`);
+  try {
+    const careerIndex = dbData.careers?.findIndex(c => c.id === parseInt(req.params.id));
+
+    if (careerIndex === -1 || careerIndex === undefined) {
+      return res.status(404).json({ error: 'Career not found' });
+    }
+
+    const deletedCareer = dbData.careers.splice(careerIndex, 1)[0];
+
+    // Save to file (optional - for persistence)
+    try {
+      const dbPath = path.join(__dirname, 'src/db.json');
+      fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2));
+    } catch (writeError) {
+      console.warn('Could not save to file:', writeError.message);
+    }
+
+    res.json({ message: 'Career deleted successfully', career: deletedCareer });
+  } catch (error) {
+    console.error('Error deleting career:', error);
+    res.status(500).json({ error: 'Failed to delete career' });
+  }
+});
+
+app.post('/api/careers/:id/favorite', (req, res) => {
+  console.log(`POST /api/careers/${req.params.id}/favorite requested`);
+  try {
+    const careerIndex = dbData.careers?.findIndex(c => c.id === parseInt(req.params.id));
+
+    if (careerIndex === -1 || careerIndex === undefined) {
+      return res.status(404).json({ error: 'Career not found' });
+    }
+
+    dbData.careers[careerIndex].isFavorite = !dbData.careers[careerIndex].isFavorite;
+    dbData.careers[careerIndex].updatedAt = new Date().toISOString();
+
+    // Save to file (optional - for persistence)
+    try {
+      const dbPath = path.join(__dirname, 'src/db.json');
+      fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2));
+    } catch (writeError) {
+      console.warn('Could not save to file:', writeError.message);
+    }
+
+    res.json(dbData.careers[careerIndex]);
+  } catch (error) {
+    console.error('Error toggling favorite:', error);
+    res.status(500).json({ error: 'Failed to toggle favorite' });
+  }
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
