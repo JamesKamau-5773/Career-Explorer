@@ -54,7 +54,9 @@ app.get('/api/careers', (req, res) => {
 
 app.get('/api/careers/:id', (req, res) => {
   console.log(`GET /api/careers/${req.params.id} requested`);
-  const career = dbData.careers?.find(c => c.id === parseInt(req.params.id));
+  const career = dbData.careers?.find(c =>
+    c.id === req.params.id || c.id === parseInt(req.params.id)
+  );
   if (career) {
     res.json(career);
   } else {
@@ -94,7 +96,9 @@ app.post('/api/careers', (req, res) => {
 app.put('/api/careers/:id', (req, res) => {
   console.log(`PUT /api/careers/${req.params.id} requested`, req.body);
   try {
-    const careerIndex = dbData.careers?.findIndex(c => c.id === parseInt(req.params.id));
+    const careerIndex = dbData.careers?.findIndex(c =>
+      c.id === req.params.id || c.id === parseInt(req.params.id)
+    );
 
     if (careerIndex === -1 || careerIndex === undefined) {
       return res.status(404).json({ error: 'Career not found' });
@@ -123,7 +127,9 @@ app.put('/api/careers/:id', (req, res) => {
 app.delete('/api/careers/:id', (req, res) => {
   console.log(`DELETE /api/careers/${req.params.id} requested`);
   try {
-    const careerIndex = dbData.careers?.findIndex(c => c.id === parseInt(req.params.id));
+    const careerIndex = dbData.careers?.findIndex(c =>
+      c.id === req.params.id || c.id === parseInt(req.params.id)
+    );
 
     if (careerIndex === -1 || careerIndex === undefined) {
       return res.status(404).json({ error: 'Career not found' });
@@ -148,7 +154,9 @@ app.delete('/api/careers/:id', (req, res) => {
 app.post('/api/careers/:id/favorite', (req, res) => {
   console.log(`POST /api/careers/${req.params.id}/favorite requested`);
   try {
-    const careerIndex = dbData.careers?.findIndex(c => c.id === parseInt(req.params.id));
+    const careerIndex = dbData.careers?.findIndex(c =>
+      c.id === req.params.id || c.id === parseInt(req.params.id)
+    );
 
     if (careerIndex === -1 || careerIndex === undefined) {
       return res.status(404).json({ error: 'Career not found' });
