@@ -172,7 +172,11 @@ app.post('/api/careers/:id/favorite', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-  res.json({ status: 'OK', timestamp: new Date().toISOString() });
+  res.json({
+    status: 'OK',
+    timestamp: new Date().toISOString(),
+    version: '1.0.1'
+  });
 });
 
 app.get('*', (req, res) => {
