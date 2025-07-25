@@ -1,104 +1,255 @@
 {
   "careers": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Software Engineer",
       "description": "Develops and maintains software applications using various programming languages and frameworks. Responsible for designing, coding, testing, and debugging software systems.",
       "salaryRange": "$70,000 - $120,000",
-      "requiredSkills": ["Java", "Python", "C++", "Problem Solving", "Team Work"],
-      "educationLevel": ["Degree"],
-      "requiredGrades": ["A", "B"],
-      "category": "Technology"
+      "requiredSkills": [
+        "Java",
+        "Python",
+        "C++",
+        "Problem Solving",
+        "Team Work"
+      ],
+      "educationLevel": "Degree",
+      "requiredGrades": [
+        "A",
+        "B"
+      ],
+      "category": "Technology",
+      "experience": "Entry to Mid-level"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Registered Nurse",
       "description": "Provides patient care, administers medications, and assists doctors in medical procedures. Works in hospitals, clinics, and healthcare facilities.",
       "salaryRange": "$50,000 - $70,000",
-      "requiredSkills": ["Compassion", "Attention to Detail", "Communication", "Medical Knowledge"],
-      "educationLevel": ["Degree", "Diploma"],
-      "requiredGrades": ["A", "B", "C"],
-      "category": "Healthcare"
+      "requiredSkills": [
+        "Compassion",
+        "Attention to Detail",
+        "Communication",
+        "Medical Knowledge"
+      ],
+      "educationLevel": [
+        "Degree",
+        "Diploma"
+      ],
+      "requiredGrades": [
+        "A",
+        "B",
+        "C"
+      ],
+      "category": "Healthcare",
+      "experience": "Entry-level"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Digital Marketing Specialist",
       "description": "Creates and manages digital marketing campaigns across various platforms. Analyzes market trends and customer behavior to optimize marketing strategies.",
       "salaryRange": "$45,000 - $65,000",
-      "requiredSkills": ["Social Media", "SEO", "Content Creation", "Analytics"],
-      "educationLevel": ["Degree", "Certificate"],
-      "requiredGrades": ["B", "C"],
-      "category": "Marketing"
+      "requiredSkills": [
+        "Social Media",
+        "SEO",
+        "Content Creation",
+        "Analytics"
+      ],
+      "educationLevel": [
+        "Degree",
+        "Certificate"
+      ],
+      "requiredGrades": [
+        "B",
+        "C"
+      ],
+      "category": "Marketing",
+      "experience": "Entry-level"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Mechanical Engineer",
       "description": "Designs, develops, and tests mechanical devices and systems. Works on projects ranging from small components to large industrial machinery.",
       "salaryRange": "$65,000 - $95,000",
-      "requiredSkills": ["CAD Software", "Problem Solving", "Mathematics", "Project Management"],
-      "educationLevel": ["Degree"],
-      "requiredGrades": ["A", "B"],
-      "category": "Engineering"
+      "requiredSkills": [
+        "CAD Software",
+        "Problem Solving",
+        "Mathematics",
+        "Project Management"
+      ],
+      "educationLevel": [
+        "Degree"
+      ],
+      "requiredGrades": [
+        "A",
+        "B"
+      ],
+      "category": "Engineering",
+      "experience": "Entry to Mid-level"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Graphic Designer",
       "description": "Creates visual concepts and designs for various media including websites, advertisements, and print materials.",
       "salaryRange": "$40,000 - $60,000",
-      "requiredSkills": ["Adobe Creative Suite", "Creativity", "Typography", "Color Theory"],
-      "educationLevel": ["Degree", "Diploma", "Certificate"],
-      "requiredGrades": ["B", "C", "D"],
-      "category": "Design"
+      "requiredSkills": [
+        "Adobe Creative Suite",
+        "Creativity",
+        "Typography",
+        "Color Theory"
+      ],
+      "educationLevel": [
+        "Degree",
+        "Diploma",
+        "Certificate"
+      ],
+      "requiredGrades": [
+        "B",
+        "C",
+        "D"
+      ],
+      "category": "Design",
+      "experience": "Entry-level"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Data Analyst",
       "description": "Collects, processes, and analyzes data to help organizations make informed business decisions.",
       "salaryRange": "$55,000 - $80,000",
-      "requiredSkills": ["SQL", "Excel", "Python", "Statistics", "Data Visualization"],
-      "educationLevel": ["Degree"],
-      "requiredGrades": ["A", "B"],
-      "category": "Technology"
+      "requiredSkills": [
+        "SQL",
+        "Excel",
+        "Python",
+        "Statistics",
+        "Data Visualization"
+      ],
+      "educationLevel": [
+        "Degree"
+      ],
+      "requiredGrades": [
+        "A",
+        "B"
+      ],
+      "category": "Technology",
+      "experience": "Entry-level"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Electrician",
       "description": "Installs, maintains, and repairs electrical systems in residential, commercial, and industrial settings.",
       "salaryRange": "$45,000 - $70,000",
-      "requiredSkills": ["Electrical Knowledge", "Problem Solving", "Safety Protocols", "Manual Dexterity"],
-      "educationLevel": ["Certificate", "Diploma"],
-      "requiredGrades": ["C", "D"],
-      "category": "Trades"
+      "requiredSkills": [
+        "Electrical Knowledge",
+        "Problem Solving",
+        "Safety Protocols",
+        "Manual Dexterity"
+      ],
+      "educationLevel": [
+        "Certificate",
+        "Diploma"
+      ],
+      "requiredGrades": [
+        "C",
+        "D"
+      ],
+      "category": "Trades",
+      "experience": "Entry-level"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Teacher",
       "description": "Educates students in various subjects, creates lesson plans, and assesses student progress in educational institutions.",
       "salaryRange": "$40,000 - $65,000",
-      "requiredSkills": ["Communication", "Patience", "Subject Knowledge", "Classroom Management"],
-      "educationLevel": ["Degree"],
-      "requiredGrades": ["A", "B", "C"],
-      "category": "Education"
+      "requiredSkills": [
+        "Communication",
+        "Patience",
+        "Subject Knowledge",
+        "Classroom Management"
+      ],
+      "educationLevel": [
+        "Degree"
+      ],
+      "requiredGrades": [
+        "A",
+        "B",
+        "C"
+      ],
+      "category": "Education",
+      "experience": "Entry-level"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Chef",
       "description": "Plans menus, prepares food, and manages kitchen operations in restaurants, hotels, and other food service establishments.",
       "salaryRange": "$35,000 - $55,000",
-      "requiredSkills": ["Culinary Skills", "Creativity", "Time Management", "Leadership"],
-      "educationLevel": ["Certificate", "Diploma"],
-      "requiredGrades": ["C", "D"],
-      "category": "Hospitality"
+      "requiredSkills": [
+        "Culinary Skills",
+        "Creativity",
+        "Time Management",
+        "Leadership"
+      ],
+      "educationLevel": [
+        "Certificate",
+        "Diploma"
+      ],
+      "requiredGrades": [
+        "C",
+        "D"
+      ],
+      "category": "Hospitality",
+      "experience": "Entry-level"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Financial Advisor",
       "description": "Provides financial guidance to individuals and businesses, helping them make investment and financial planning decisions.",
       "salaryRange": "$50,000 - $85,000",
-      "requiredSkills": ["Financial Analysis", "Communication", "Sales", "Mathematics"],
-      "educationLevel": ["Degree"],
-      "requiredGrades": ["A", "B"],
-      "category": "Finance"
+      "requiredSkills": [
+        "Financial Analysis",
+        "Communication",
+        "Sales",
+        "Mathematics"
+      ],
+      "educationLevel": [
+        "Degree"
+      ],
+      "requiredGrades": [
+        "A",
+        "B"
+      ],
+      "category": "Finance",
+      "experience": "Entry to Mid-level"
+    },
+    {
+      "id": "16b8",
+      "title": "ipugyfgkhgui;gh[keep in mind ",
+      "description": "jhgyih",
+      "salaryRange": "kljhgfuhjghb",
+      "requiredSkills": [
+        ";lkhjijkl"
+      ],
+      "educationLevel": [
+        "kjghikj"
+      ],
+      "requiredGrades": [
+        "khuiokjl"
+      ],
+      "category": "oiyuguhioj"
+    },
+    {
+      "id": "7fda",
+      "title": "kjjjjjjjgygfhftuip87tyiu",
+      "description": ";liuhgofuhjkhlmnb",
+      "salaryRange": "oiuhijokljh",
+      "requiredSkills": [
+        "loiuphygiujkj"
+      ],
+      "educationLevel": [
+        "liuytf8yiujkyuh"
+      ],
+      "requiredGrades": [
+        "lkiuyt8fgyuiojt"
+      ],
+      "category": "kljhgftuyihj"
     }
   ]
 }
