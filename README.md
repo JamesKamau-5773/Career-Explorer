@@ -14,14 +14,14 @@ This is a full-stack career exploration application built using React JS for the
 
 ## Features
 
-- **Career Exploration**: Browse through a comprehensive list of career options
-- **Detailed Career Views**: View in-depth information about specific careers
-- **Add New Careers**: Contribute new career paths to the database
-- **Favorites System**: Mark and manage favorite career options
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Real-time Updates**: Dynamic content updates without page refreshes
-- **Search and Filter**: Find careers based on specific criteria
-- **Modern UI/UX**: Clean and intuitive user interface
+- Career Exploration: Browse through a comprehensive list of career options
+- Detailed Career Views: View in-depth information about specific careers
+- Add New Careers: Contribute new career paths to the database
+- Favorites System: Mark and manage favorite career options
+- Responsive Design: Works seamlessly on desktop, tablet, and mobile devices
+- Real-time Updates: Dynamic content updates without page refreshes
+- Search and Filter: Find careers based on specific criteria
+- Modern UI/UX: Clean and intuitive user interface
 
 ## How to Use
 
@@ -96,20 +96,20 @@ If you want to run the project locally, you'll need:
 
 ## Technologies Used
 
-- **Frontend:**
+- Frontend:
   - React JS (v19.1.0)
   - React Router DOM (v7.7.1)
   - Vite (v4.5.0)
   - CSS3
   - JavaScript (ES6+)
 
-- **Backend:**
+- Backend:
   - Express.js (v4.18.0)
   - Node.js
   - CORS middleware
   - JSON file-based database
 
-- **Development Tools:**
+- Development Tools:
   - ESLint for code linting
   - Vite for build tooling
   - Git for version control
@@ -136,16 +136,16 @@ The backend provides the following REST API endpoints:
 ## Deployment
 
 ### Frontend Deployment (Netlify)
-- **Platform**: Netlify
-- **Build Command**: `npm run build`
-- **Publish Directory**: `dist`
-- **Live URL**: [Career Explorer Frontend](https://jameskamau-career-explorer.netlify.app/)
+- Platform: Netlify
+- Build Command: `npm run build`
+- Publish Directory: `dist`
+- Live URL: [Career Explorer Frontend](https://jameskamau-career-explorer.netlify.app/)
 
 ### Backend Deployment (Render)
-- **Platform**: Render
-- **Build Command**: `npm install`
-- **Start Command**: `npm start`
-- **Live URL**: [Career Explorer API](https://career-explorer-4.onrender.com)
+- Platform: Render
+- Build Command: `npm install`
+- Start Command: `npm start`
+- Live URL: [Career Explorer API](https://career-explorer-4.onrender.com)
 
 ## Project Structure
 
