@@ -186,6 +186,7 @@ body {
   border-radius: 5px;
   font-size: 16px;
   background-color: white;
+  color: #000000;
 }
 
 .formgroup select {
@@ -195,6 +196,7 @@ body {
   border-radius: 5px;
   font-size: 16px;
   background-color: white;
+  color: #000000;
 }
 
 .search-btn {
@@ -314,6 +316,7 @@ body {
   border-radius: 4px;
   font-size: 14px;
   background-color: white;
+  color: #000000;
 }
 
 .career-form textarea {
@@ -323,6 +326,7 @@ body {
   border-radius: 4px;
   font-size: 14px;
   background-color: white;
+  color: #000000;
 }
 
 .edit-form input {
@@ -332,6 +336,7 @@ body {
   border-radius: 4px;
   font-size: 14px;
   background-color: white;
+  color: #000000;
 }
 
 .edit-form textarea {
@@ -341,6 +346,7 @@ body {
   border-radius: 4px;
   font-size: 14px;
   background-color: white;
+  color: #000000;
 }
 
 .form-actions {
