@@ -12,6 +12,23 @@ const api = {
     }
   },
 
+  addCareer: async (careerData) => {
+    try {
+      const response = await fetch(`${API_BASE_URL}/careers`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(careerData)
+      });
+      if (!response.ok) throw new Error('Failed to add career');
+      return await response.json();
+    } catch (error) {
+      console.error('Error adding career:', error);
+      throw error;
+    }
+  },
+
   addFavorite: async (id) => {
     try {
       const response = await fetch(`${API_BASE_URL}/careers/${id}/favorite`, {
