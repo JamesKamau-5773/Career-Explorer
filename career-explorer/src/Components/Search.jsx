@@ -48,7 +48,7 @@ function Search({ setSearchResults, setSearchFilters }) {
 
       setSearchResults(filtered)
       setSearchFilters({ [searchType]: searchValue })
-      navigate('/filtered-careers')
+      navigate('/careers/filtered')
     } catch (error) {
       console.error('Search error:', error)
     } finally {
