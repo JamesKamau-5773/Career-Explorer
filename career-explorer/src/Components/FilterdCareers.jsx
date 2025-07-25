@@ -1,5 +1,5 @@
+
 import React from 'react';
-import { Link } from 'react-router-dom';
 import CareerCard from './CareerCard';
 import api from './Api';
 
@@ -49,9 +49,7 @@ function FilteredCareers({ searchResults, searchFilters }) {
       ) : (
         <div className="no-results">
           <p>No careers match your current filters.</p>
-          <Link to="/search" className="try-again-link">
-            Try different search options
-          </Link>
+          <p>Try different search options in the search page.</p>
         </div>
       )}
     </div>
