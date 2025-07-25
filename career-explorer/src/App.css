@@ -40,3 +40,66 @@ body {
   background-color: #3b82f6;
 }
 
+/* Main Content */
+.main-content {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Home Page Styles */
+.home-page {
+  text-align: center;
+}
+
+.welcome-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.welcome-box h1 {
+  color: #1e3a8a;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.options-row {
+  margin-bottom: 40px;
+}
+
+.option-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px;
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+}
+
+.option-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.option-link {
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.option-link:hover {
+  background-color: #1e3a8a;
+}
+
