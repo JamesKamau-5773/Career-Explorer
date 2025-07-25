@@ -1,6 +1,6 @@
 const API_BASE_URL = process.env.NODE_ENV === 'production'
   ? '/api'
-  : 'http://localhost:3001';
+  : 'https://career-explorer-3-8vfq.onrender.com';
 
 const api = {
   getCareers: async () => {
