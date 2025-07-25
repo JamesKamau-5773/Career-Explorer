@@ -3,10 +3,30 @@ const cors = require('cors');
 const path = require('path');
 const fs = require('fs');
 
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
+  process.exit(1);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+  process.exit(1);
+});
+
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'https://transcendent-ganache-d43c62.netlify.app',
+    'https://jameskamau-career-explorer.netlify.app'
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 app.use(express.json());
 
@@ -165,7 +185,10 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`🚀 Server is running on port ${port}`);
-  console.log(`📡 API available at http://localhost:${port}/api`);
-  console.log(`🏠 App available at http://localhost:${port}`);
+  console.log(`Server is running on port ${port}`);
+  console.log(`API available at http://localhost:${port}/api`);
+  console.log(`App available at http://localhost:${port}`);
+}).on('error', (err) => {
+  console.error('Server failed to start:', err);
+  process.exit(1);
 });
