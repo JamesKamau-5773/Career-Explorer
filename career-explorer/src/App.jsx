@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import Home from './components/Home';
-import Search from './components/Search';
-import AllCareers from './components/AllCareers';
-import FilteredCareers from './components/FilteredCareers';
-import Contacts from './components/Contacts';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import './App.css';
+import Home from './Components/Home';
+import Search from './Components/Search';
+import AllCareers from './Components/AllCareers';
+import FilteredCareers from './Components/FilterdCareers';
+import Contacts from './Components/Contact';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
