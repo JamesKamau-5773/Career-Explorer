@@ -6,16 +6,12 @@ const fs = require('fs');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Enable CORS for all origins
 app.use(cors());
 
-// Parse JSON bodies
 app.use(express.json());
 
-// Serve static files from React build
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// Load and serve the JSON data
 let dbData = { careers: [] };
 try {
   const dbPath = path.join(__dirname, 'src/db.json');
@@ -31,7 +27,6 @@ try {
   dbData = { careers: [] };
 }
 
-// API routes
 app.get('/api/careers', (req, res) => {
   console.log('GET /api/careers requested');
   res.json(dbData.careers || []);
@@ -62,7 +57,6 @@ app.post('/api/careers', (req, res) => {
 
     dbData.careers.push(newCareer);
 
-    // Save to file (optional - for persistence)
     try {
       const dbPath = path.join(__dirname, 'src/db.json');
       fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2));
@@ -92,7 +86,6 @@ app.put('/api/careers/:id', (req, res) => {
       updatedAt: new Date().toISOString()
     };
 
-    // Save to file (optional - for persistence)
     try {
       const dbPath = path.join(__dirname, 'src/db.json');
       fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2));
@@ -118,7 +111,6 @@ app.delete('/api/careers/:id', (req, res) => {
 
     const deletedCareer = dbData.careers.splice(careerIndex, 1)[0];
 
-    // Save to file (optional - for persistence)
     try {
       const dbPath = path.join(__dirname, 'src/db.json');
       fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2));
@@ -145,7 +137,6 @@ app.post('/api/careers/:id/favorite', (req, res) => {
     dbData.careers[careerIndex].isFavorite = !dbData.careers[careerIndex].isFavorite;
     dbData.careers[careerIndex].updatedAt = new Date().toISOString();
 
-    // Save to file (optional - for persistence)
     try {
       const dbPath = path.join(__dirname, 'src/db.json');
       fs.writeFileSync(dbPath, JSON.stringify(dbData, null, 2));
@@ -160,12 +151,10 @@ app.post('/api/careers/:id/favorite', (req, res) => {
   }
 });
 
-// Health check endpoint
 app.get('/health', (req, res) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
-// Serve React app for all other routes
 app.get('*', (req, res) => {
   const indexPath = path.join(__dirname, 'dist', 'index.html');
   if (fs.existsSync(indexPath)) {

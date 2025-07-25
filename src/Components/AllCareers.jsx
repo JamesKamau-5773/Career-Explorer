@@ -59,7 +59,7 @@ function AllCareers() {
 
   const handleAddCareer = () => {
     setShowAddForm(!showAddForm);
-    setEditingCareer(null); // Close any open edit forms
+    setEditingCareer(null);
   };
 
   const handleSaveNewCareer = async (newCareerData) => {
@@ -116,7 +116,6 @@ function AllCareers() {
   );
 }
 
-// Edit Career Form Component
 function EditCareerForm({ career, onSave, onCancel }) {
   const [formData, setFormData] = useState({
     title: career.title || '',
@@ -242,7 +241,6 @@ function EditCareerForm({ career, onSave, onCancel }) {
   );
 }
 
-// Add Career Form Component
 function AddCareerForm({ onSave, onCancel }) {
   const [formData, setFormData] = useState({
     title: '',
