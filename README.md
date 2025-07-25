@@ -10,7 +10,7 @@ This is a full-stack career exploration application built using React JS for the
 
 ## Screenshot
 
-![Career Explorer App Screenshot](./public/vite.svg)
+![Career Explorer App Screenshot](./public/career-explorer-screenshot.png)
 
 ## Features
 
