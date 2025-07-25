@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "server": "json-server --watch src/db.json --port 3001",
     "start": "node Server.js",
-    "render-build": "npm install && npm run build"
+    "render-build": "npm install && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "cors": "^2.8.5",
