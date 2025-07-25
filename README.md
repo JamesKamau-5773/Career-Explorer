@@ -33,7 +33,7 @@ This is a full-stack career exploration application built using React JS for the
 
 ### View Live Site
 
-Visit the deployed application at: [Career Explorer App](https://career-explorer-netlify.netlify.app/)
+Visit the deployed application at: [Career Explorer App](https://jameskamau-career-explorer.netlify.app/)
 
 The live site allows you to:
 
@@ -139,7 +139,7 @@ The backend provides the following REST API endpoints:
 - **Platform**: Netlify
 - **Build Command**: `npm run build`
 - **Publish Directory**: `dist`
-- **Live URL**: [Career Explorer Frontend](https://career-explorer-netlify.netlify.app/)
+- **Live URL**: [Career Explorer Frontend](https://jameskamau-career-explorer.netlify.app/)
 
 ### Backend Deployment (Render)
 - **Platform**: Render
