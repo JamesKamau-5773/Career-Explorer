@@ -103,3 +103,345 @@ body {
   background-color: #1e3a8a;
 }
 
+/* Card Styles */
+.Card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.Card h1 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.Card p {
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.CardBtns {
+  margin-top: 15px;
+}
+
+.CardBtns button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.CardBtns button:hover {
+  background-color: #1e3a8a;
+}
+
+/* Search Styles */
+.searchbar {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.searchheader h1 {
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.searchheader p {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.formgroup {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1e3a8a;
+}
+
+.formgroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1e3a8a;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.formgroup select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.search-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #1e3a8a;
+}
+
+.start-button:hover {
+  background-color: #1e3a8a;
+}
+
+/* Info and Start Boxes */
+.info-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.start-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.info-box h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.start-box h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.info-content {
+  text-align: center;
+}
+
+/* Career Form Styles */
+.career-form {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.edit-form {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.career-form h2 {
+  color: #1f2937;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.edit-form h2 {
+  color: #1f2937;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.career-form .form-group {
+  margin-bottom: 15px;
+}
+
+.edit-form .form-group {
+  margin-bottom: 15px;
+}
+
+.career-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.career-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.career-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.edit-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.form-actions {
+  margin-top: 15px;
+}
+
+.save-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.save-btn:hover {
+  background-color: #1e3a8a;
+}
+
+.cancel-btn {
+  background-color: white;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #f8fafc;
+}
+
+/* Careers Header */
+.careers-header {
+  margin-bottom: 30px;
+}
+
+.careers-header h1 {
+  color: #1e3a8a;
+  font-size: 32px;
+  margin: 0;
+  display: inline-block;
+}
+
+.add-career-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.add-career-btn:hover {
+  background-color: #1e3a8a;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav {
+    text-align: center;
+  }
+
+  .link {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .option-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .welcome-box h1 {
+    font-size: 28px;
+  }
+
+  .careers-header h1 {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .add-career-btn {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+}
